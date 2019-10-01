@@ -27,7 +27,7 @@ import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = "kr.or.ddit", useDefaultFilters = false,
+@ComponentScan(basePackages = {"kr.or.ddit", "com.t.hc"}, useDefaultFilters = false,
 				includeFilters = @Filter(type = FilterType.ANNOTATION,
 								classes = {Controller.class, ControllerAdvice.class}))
 @EnableWebMvc

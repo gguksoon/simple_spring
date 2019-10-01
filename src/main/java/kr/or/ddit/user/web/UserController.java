@@ -21,5 +21,19 @@ public class UserController {
 		
 		return "user/view";
 	}
+	
+	@RequestMapping("view2")
+	public String userView2(Model model) {
+		model.addAttribute("user", userService.getUser("brown"));
+		
+		return "user/view2";
+	}
+	
+	@RequestMapping("view3")
+	public String userView3(Model model) {
+		model.addAttribute("user", userService.getUser("brown"));
+		
+		return "user/view3";
+	}
 
 }

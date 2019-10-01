@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 @Configuration
-@ComponentScan(basePackages = "kr.or.ddit", useDefaultFilters = false,
+@ComponentScan(basePackages = {"kr.or.ddit", "com.t.hc"}, useDefaultFilters = false,
 				includeFilters = @Filter(type = FilterType.ANNOTATION, 
 										classes = {Service.class, Repository.class}))
 public class RootConfig {
