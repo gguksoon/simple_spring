@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	views~~
-	${user.userId } <br>
-	${user.pass } <br>
+	<jsp:forward page="${cp }/calList"/>
 </body>
 </html>

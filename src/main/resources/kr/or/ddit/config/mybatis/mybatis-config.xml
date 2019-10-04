@@ -6,10 +6,14 @@
 	
 	<typeAliases>
 		<typeAlias alias="user"  type="kr.or.ddit.user.model.User"/>
+		<typeAlias alias="emp"  type="kr.or.ddit.emp.model.Emp"/>
+		<typeAlias alias="cal"  type="kr.or.ddit.cal.model.Cal"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="kr/or/ddit/config/mybatis/mapper/user.xml"/>
+		<mapper resource="kr/or/ddit/config/mybatis/mapper/emp.xml"/>
+		<mapper resource="kr/or/ddit/config/mybatis/mapper/cal.xml"/>
 	</mappers>
 	
 </configuration>
